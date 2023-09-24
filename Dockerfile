@@ -24,5 +24,6 @@ RUN echo "export PATH=${GRADLE_HOME}/bin:${PATH}" >>/etc/profile.d/gradle.sh
 RUN chmod +x /etc/profile.d/gradle.sh
 RUN source /etc/profile.d/gradle.sh
 RUN ls
+RUN gradle --version
 
 
