@@ -3,10 +3,11 @@ FROM centos:7.6.1810
 RUN set -x && \
 yum -y install \
 yum-plugin-ovl \
-java-11-openjdk-devel 
+java-11-openjdk-devel \
+unzip
 
 #FROM openjdk:11.0.7-jdk
-RUN apt-get install -y unzip
+#RUN apt-get install -y unzip
 ENV APP_HOME=/root/dev/beverage
 WORKDIR $APP_HOME
 COPY . $APP_HOME
