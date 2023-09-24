@@ -1,4 +1,4 @@
-From centos: 7.6.1810
+From centos:7.6.1810
 
 RUN set -x && \
 yum -y install \
