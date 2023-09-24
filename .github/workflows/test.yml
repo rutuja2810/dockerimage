@@ -4,7 +4,7 @@ on:
     branches: esbtest
 jobs:
   build:
-    runs-on: centos:7.6.1810
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Build the docker image
