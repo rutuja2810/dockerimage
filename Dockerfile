@@ -14,4 +14,4 @@ xzutils \
 unzip && \
 yum clean all && \
 run -rf /var/cache/yum
-RUN java --version
+#RUN java --version
