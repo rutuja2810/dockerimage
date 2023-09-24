@@ -1,4 +1,4 @@
-FROM centos:8
+FROM centos:7.9.2009
 
 RUN set -x && \
 yum -y install \
