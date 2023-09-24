@@ -13,5 +13,5 @@ git \
 xzutils \
 unzip && \
 yum clean all && \
-run -rf /var/cache/yum
-#RUN java --version
+rm -rf /var/cache/yum
+RUN java --version
