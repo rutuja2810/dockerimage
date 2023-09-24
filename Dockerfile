@@ -18,3 +18,11 @@ RUN java --version
 RUN wget https://services.gradle.org/distributions/gradle-5.0-bin.zip -P /tmp
 RUN unzip -d /opt/gradle /tmp/gradle-5.0-bin.zip
 RUN ls /opt/gradle/gradle-5.0
+RUN /etc/profile.d/ && touch gradle.sh
+RUN echo "export PATH=${GRADLE_HOME}/bin:${PATH}" >>/etc/profile.d/gradle.sh
+RUN echo "export PATH=${GRADLE_HOME}/bin:${PATH}" >>/etc/profile.d/gradle.sh
+RUN chmod +x /etc/profile.d/gradle.sh
+RUN source +x /etc/profile.d/gradle.sh
+RUN ls
+
+
