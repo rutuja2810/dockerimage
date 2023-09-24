@@ -22,7 +22,7 @@ RUN cd /etc/profile.d/ && touch gradle.sh
 RUN echo "export PATH=${GRADLE_HOME}/bin:${PATH}" >>/etc/profile.d/gradle.sh
 RUN echo "export PATH=${GRADLE_HOME}/bin:${PATH}" >>/etc/profile.d/gradle.sh
 RUN chmod +x /etc/profile.d/gradle.sh
-RUN source +x /etc/profile.d/gradle.sh
+RUN source /etc/profile.d/gradle.sh
 RUN ls
 
 
